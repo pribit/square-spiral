@@ -3,7 +3,7 @@ from .builder import AlgebraSpiralBuilder
 
 
 class Spiral(SpiralCommon):
-    def __init__(self, spiral_number: int = 5, builder_cls=AlgebraSpiralBuilder):
+    def __init__(self, spiral_number: int, builder_cls=AlgebraSpiralBuilder):
         super(Spiral, self).__init__(spiral_number)
         self._builder: AbstractSpiralBuilder = builder_cls()
 
